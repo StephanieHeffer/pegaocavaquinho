@@ -1,0 +1,176 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #0d0d0d;
+	font-family: "PT Serif", serif;
+}
+
+.container {
+	transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+a {
+	color: #0d0d0d;
+	@include transition(0.5s);
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: #0d0d0d;
+		outline: none;
+		text-decoration: underline;
+	}
+}
+
+a[href^="tel"] {
+	color: inherit;
+	text-decoration: none;
+}
+
+a[x-apple-data-detectors] {
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	line-height: inherit !important;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: inset 0 0 0px 9999px white;
+}
+
+.btn {
+	border-radius: 0;
+	&:focus {
+		box-shadow: none !important;
+		outline: none;
+	}
+}
+
+hr {
+	border-top-color: rgba($color: $black, $alpha: 0.3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-weight: 700;
+}
+
+// Bootstrap adjusts
+
+.gutter-5 {
+	&.row {
+		margin-right: -5px;
+		margin-left: -5px;
+	}
+	[class*="col-"] {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+}
+
+.single {
+	article {
+		a {
+			word-break: break-all;
+		}
+		img {
+			height: auto;
+			max-width: 100%;
+		}
+
+		img.alignright {
+			float: right;
+			margin: 0 0 1em 1em;
+		}
+		img.alignleft {
+			float: left;
+			margin: 0 1em 1em 0;
+		}
+		img.aligncenter {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.alignright {
+			float: right;
+		}
+		.alignleft {
+			float: left;
+		}
+		.aligncenter {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		blockquote {
+			font-size: 26px;
+			max-width: calc(100% - 160px);
+			position: relative;
+			margin: auto;
+			padding: 0;
+			text-align: center;
+
+			&:before,
+			&:after {
+				position: absolute;
+				color: #f1efe6;
+				font-size: 8rem;
+				width: 4rem;
+				height: 4rem;
+			}
+			&::before {
+				content: "“";
+				left: -5rem;
+				top: -2rem;
+			}
+			&:after {
+				content: "”";
+				right: -5rem;
+				bottom: 1rem;
+			}
+		}
+	}
+}
+
+.read-more-title,
+.section-title,
+.btn-yellow {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+}
+
+.excerpt {
+	font-size: 18px;
+}
+
+.btn-yellow {
+	background-color: $tabagismo;
+}
+
+.lb-overlay {
+	z-index: 1100 !important;
+
+	&:target {
+		padding: 0 !important;
+    }
+    
+    img {
+        max-height: none !important;
+    }
+}
+

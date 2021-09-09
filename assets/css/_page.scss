@@ -1,0 +1,54 @@
+.page-title {
+	background: linear-gradient(90deg, #f9b22a 0, #901f6a);
+	color: $white;
+    font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.page-template-default {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+//		background-color: $drauzio;
+		color: $white;
+		padding: 10px;
+		text-transform: uppercase;
+	}
+}
+
+.single-post article.type-post {
+    font-size: 18px;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		background-color: #777;
+        color: $white;
+        font-size: 20px;
+		padding: 10px;
+		text-transform: uppercase;
+    }
+    a {
+        color: #007bff;
+
+        &:hover,
+        &:focus {
+            color: #007bff;
+        }
+    }
+}
+
+.author,
+.search,
+.tag {
+    .section-title {
+       // background-color: $drauzio;
+    }
+}

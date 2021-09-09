@@ -1,0 +1,39 @@
+#footer {
+	background: #f9b22a;
+	background: linear-gradient(90deg, #f9b22a 0, #901f6a);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$start", endColorstr="$end", GradientType=1);
+    font-family: "Open Sans", sans-serif;
+	
+	.footer {
+        text-align: center;
+		@include media-breakpoint-up(lg) {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			text-align: left;
+		}
+	}
+
+	.footer-logo {
+		height: 60px;
+		width: 140px;
+    }
+    
+	.menu {
+		list-style: none;
+		margin: 20px 0;
+		padding: 0;
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			margin: 0;
+		}
+		li {
+			@include media-breakpoint-up(lg) {
+				margin: 0 10px;
+			}
+			a {
+				color: $white;
+			}
+		}
+	}
+}
